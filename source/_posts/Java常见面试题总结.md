@@ -1,7 +1,10 @@
 title: Java常见面试题总结
 author: Halfopen
-date: 2017-12-04 19:06:50
 tags:
+  - 面试
+categories:
+  - java
+date: 2017-12-04 19:06:00
 ---
 # Java常见面试题总结
  
@@ -9,11 +12,11 @@ tags:
 ## 一、Java基础
  
 
-1、String类为什么是final的。
+1、[String类为什么是final的](/2017/12/04/String类为什么是final的/)
 
-2、HashMap的源码，实现原理，底层结构。
+2、[HashMap的源码，实现原理，底层结构](/2017/12/04/HashMap源码解析/)
 
-3、说说你知道的几个Java集合类：list、set、queue、map实现类咯。。。
+3、说说你知道的几个Java集合类：list、set、queue、map实现类咯
 
 4、描述一下ArrayList和LinkedList各自实现和区别
 
