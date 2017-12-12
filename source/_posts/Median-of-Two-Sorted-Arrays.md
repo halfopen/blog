@@ -2,6 +2,7 @@ title: Median of Two Sorted Arrays
 author: Halfopen
 tags:
   - leetcode
+  - hard
 categories:
   - 刷题
 date: 2017-12-01 20:49:00

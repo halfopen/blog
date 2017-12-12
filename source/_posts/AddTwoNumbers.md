@@ -1,6 +1,7 @@
 title: Add Two Numbers
 tags:
   - leetcode
+  - medium
 categories:
   - 刷题
 date: 2017-11-20 18:23:00

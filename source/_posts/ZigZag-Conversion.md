@@ -2,6 +2,7 @@ title: ZigZag Conversion
 author: Halfopen
 tags:
   - leetcode
+  - medium
 categories:
   - 刷题
 date: 2017-11-21 09:42:00
