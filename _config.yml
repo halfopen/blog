@@ -101,6 +101,9 @@ jsonContent:
       categories: false
       tags: true
 
+google_site_verification: true
+baidu_site_verification: true
+
 # hexo-admin authentification
 admin:
   username: halfopen

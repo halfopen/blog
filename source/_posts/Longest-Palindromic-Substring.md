@@ -2,6 +2,7 @@ title: Longest Palindromic Substring
 author: Halfopen
 tags:
   - leetcode
+  - medium
 categories:
   - 刷题
 date: 2017-11-22 22:05:00

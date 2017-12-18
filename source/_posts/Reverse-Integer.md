@@ -2,6 +2,7 @@ title: Reverse Integer
 author: Halfopen
 tags:
   - leetcode
+  - easy
 categories:
   - 刷题
 date: 2017-11-22 21:18:00
