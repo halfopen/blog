@@ -1,9 +1,10 @@
 title: Divide Two Integers
 author: Halfopen
 tags:
-  - leetcode
   - medium
-categories: []
+  - leetcode
+categories:
+  - 刷题
 date: 2017-12-22 13:40:00
 ---
 ### [29\. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)

@@ -1,9 +1,10 @@
 title: Remove Nth Node From End of List
 author: Halfopen
 tags:
-  - leetcode
   - medium
-categories: []
+  - leetcode
+categories:
+  - 刷题
 date: 2017-12-22 13:40:00
 ---
 ### [19\. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
