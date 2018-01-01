@@ -54,7 +54,7 @@ num_filters 卷积核的个数
 对于每一个文本，首先进行分词， 长度不足最长文本长度的部分补终止符，确保所有输入长度相同，再把单词映射成索引，因此文本变成id序列。如下图1975是补充的终止符的索引。
 
 ![upload successful](/assets/images/TextCNN文本分类/pasted-4.png)
-TextCNN代码说明
+### TextCNN代码说明
 https://github.com/halfopen/CNN-text-classification-keras
 
     ├── ./data
