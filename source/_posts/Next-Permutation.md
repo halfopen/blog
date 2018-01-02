@@ -26,6 +26,12 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 求下一个字典序
 
 #### Solution
+
+只要有顺序的，就有下一个比它大的字典序
+因此第一步找出最后一个顺序的位置j，然后找到它后面，最后一个比它大的位置k
+交换 j k
+再把j+1到最后逆序。
+
 ```java
 class Solution {
     public void nextPermutation(int[] nums) {
