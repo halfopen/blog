@@ -55,7 +55,7 @@ num_filters 卷积核的个数
 
 ![upload successful](/assets/images/TextCNN文本分类/pasted-4.png)
 ### TextCNN代码说明
-https://github.com/halfopen/CNN-text-classification-keras
+
 
     ├── ./data
     │   ├── ./data/gov			# 训练数据，重庆的判决书
