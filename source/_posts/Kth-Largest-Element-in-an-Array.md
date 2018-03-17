@@ -19,5 +19,18 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
 
 #### Solution
 ```java
-
+class Solution {
+     public int findKthLargest(int[] nums, int k) {
+    	// 大小为k+1,多一个位置暂存新加进来的
+        PriorityQueue<Integer> pq = new PriorityQueue<>(k+1);
+        
+        for(int n:nums){
+        	pq.add(n);
+        	if(pq.size()>k){
+            	pq.poll();
+            }
+        }
+        return pq.poll();
+    }
+}
 ```
