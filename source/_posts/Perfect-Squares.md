@@ -1,7 +1,11 @@
 title: Perfect Squares
 author: Halfopen
-date: 2018-03-17 08:49:11
 tags:
+  - leetcode
+  - medium
+categories:
+  - 刷题
+date: 2018-03-17 08:49:00
 ---
 ### [279\. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/)
 
@@ -31,7 +35,7 @@ dp[1]+dp[13-1]、 dp[4]+dp[13-4]、dp[9]+dp[13-9]中最小的那一个
 
 因此，只要从dp[1]计算到dp[n]即可。
 
-```
+```java
 class Solution {
     public int numSquares(int n) {
         
