@@ -26,7 +26,7 @@ Given an array _nums_ containing _n_ + 1 integers where each integer is between 
 
 #### Solution
 因为全是正数，所以可以用负数来标记。
-```
+```java
 public class Solution {
     public int findDuplicate(int[] nums) {
         int i=0,index=0,r=-1;
