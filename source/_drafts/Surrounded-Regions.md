@@ -3,7 +3,7 @@ author: Halfopen
 tags:
   - leetcode
   - medium
-  - 搜索
+  - 并查集
 categories:
   - 刷题
 date: 2018-01-01 14:25:00
@@ -85,4 +85,11 @@ class Solution {
     }
     
 }
+```
+
+
+使用并查集实现
+
+```java
+
 ```
