@@ -28,7 +28,7 @@ A = `[3,2,1,0,4]`, return `false`.
 
 #### Solution
 使用有向图遍历，超时
-```
+```java
 class Solution {
     public boolean canJump(int[] nums) {
         if(null == nums)return false;

@@ -33,7 +33,7 @@ For example, the lowest common ancestor (LCA) of nodes `2` and `8` is `6`. Anoth
 
 
 #### Solution
-```
+```java
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

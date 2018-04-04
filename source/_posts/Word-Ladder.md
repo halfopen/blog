@@ -40,3 +40,41 @@ return its length `5`.
 The _wordList_ parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.
 
 #### Solution
+
+使用层次遍历 bfs即可，因为Note里面有限定条件，因此不必自己构建无向图，按26个英文字母遍历即可。
+
+```java
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        Set<String> wordSet = new HashSet<>(wordList); // 把list转成set,防止超时 contains由O(n)变为O(1)
+        if(!wordSet.contains(endWord))return 0;
+        int res = 1;
+        LinkedList<String> q = new LinkedList<>();
+        q.addLast(beginWord);      
+        while(!q.isEmpty()){     
+            int qSize = q.size();
+            while(qSize-->0){
+                String s = q.getFirst();
+                for(int j=0;j<s.length();j++){
+                    char[] temp = s.toCharArray();
+                    for(int i=0;i<27;i++){
+                        char c = (char)('a'+i);
+                        temp[j] = c;
+                        String word = String.valueOf(temp);
+                        if(word.equals(endWord))return res+1;
+                        if(wordSet.contains(word)){
+                            q.addLast(word);
+                            wordSet.remove(word);
+                        }
+                    }
+                }
+                q.removeFirst();
+            }
+            res++;
+        }
+        return 0;
+    }
+}
+```
+
+

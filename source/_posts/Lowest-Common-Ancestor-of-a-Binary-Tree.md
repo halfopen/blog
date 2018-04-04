@@ -36,7 +36,7 @@ For example, the lowest common ancestor (LCA) of nodes `5` and `1` is `3`. Anoth
 
 递归解法，这里都是假定p和q是在树中存在的。
 
-```
+```java
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -61,4 +61,3 @@ class Solution {
 ```
 
 tarjen 算法
-

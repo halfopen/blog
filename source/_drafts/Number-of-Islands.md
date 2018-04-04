@@ -39,10 +39,46 @@ Answer: 3
 
 
 #### Solution
-```
+直接dfs
+```java
 class Solution {
-    public int numIslands(char[][] grid) {
-        
-    }
+    int c = 0;
+    int w, h;
+    int[][] v;
+    public int numIslands(char[][] grid) {
+        int count = 0;
+        if(null == grid)return count;
+        if(grid.length==0)return count;
+        
+        h = grid.length;
+        w = grid[0].length;
+        v = new int[h][w];
+        
+        for(int i=0;i<h;i++){
+            for(int j=0;j<w;j++){
+                if(v[i][j]==0 && grid[i][j]=='1'){
+                    dfs(i, j, grid);
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    
+    public void dfs(int i, int j, char[][] grid){
+        if(!check(i, j))return ;
+        if(grid[i][j]=='0' || v[i][j]!=0)return ;
+        
+        v[i][j]=1;
+        dfs(i+1, j, grid);
+        dfs(i-1, j, grid);
+        dfs(i, j+1, grid);
+        dfs(i, j-1, grid);
+    }
+    
+    public boolean check(int i, int j){
+        if(i>=0&& i<h && j>=0&& j<w)return true;
+        return false;
+    }
 }
 ```
