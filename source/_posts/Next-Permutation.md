@@ -29,6 +29,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 
 只要有顺序的，就有下一个比它大的字典序
 因此第一步找出最后一个顺序的位置j，然后找到它后面，最后一个比它大的位置k
+// 如果从后开始找，j是第一个降序的位置，k是第一个比它大的位置。
 交换 j k
 再把j+1到最后逆序。
 
@@ -69,6 +70,47 @@ class Solution {
                 left++;
                 right--;
             }
+        }
+    }
+}
+```
+
+```java
+class Solution {
+    public void nextPermutation(int[] nums) {
+        if(nums.length<2)return;
+        int j = -1, k=0;
+        // 1.从后面开始，找到第一个 nums[j]<nums[j+1]
+        for(int i=nums.length-2; i>=0;i--){
+            if(nums[i]<nums[i+1]){
+                j = i;
+                break;
+            }
+        }
+        // 2.如果逆序，直接跳到最后一步
+        if(j>=0){
+            // 3.从后面开始，找到第一个比 nums[j]大的nums[k]
+            for(int i=nums.length-1;i>=0;i--){
+                if(nums[i]>nums[j]){
+                    k = i;
+                    break;
+                }
+            }
+            // 4.交换 nums[j], nums[k]
+            int temp;
+            temp= nums[j];
+            nums[j] = nums[k];
+            nums[k] = temp;
+        }
+        // 5.把nums[j]之后全部逆序
+        int left = j+1, right = nums.length-1;
+        while(left<right){
+            int temp;
+            temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+            left++;
+            right--;
         }
     }
 }
