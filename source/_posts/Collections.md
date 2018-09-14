@@ -124,3 +124,6 @@ public class CollectionsDemo {
 
     List1 value: [Two, Three, One, Two, Three]
     The SingletonList is :[Two, Three, Two, Three]
+    
+# 优先队列
+
