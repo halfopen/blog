@@ -126,4 +126,33 @@ public class CollectionsDemo {
     The SingletonList is :[Two, Three, Two, Three]
     
 # 优先队列
+```java
+public class PQ {
+
+    public static void main(String[] args){
+        PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer t0, Integer t1) {
+                return t1-t0; // 逆序
+            }
+        });
+
+        pq.offer(1);
+        pq.offer(3);
+        pq.offer(2);
+
+        Iterator<Integer> it = pq.iterator();
+        while(it.hasNext()){
+            int v = it.next();
+            System.out.println(v);
+        }
+
+        while(pq.size()>0){
+            System.out.println(pq.poll());
+        }
+    }
+}
+        
+```
+
 
